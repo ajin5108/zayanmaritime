@@ -1,0 +1,184 @@
+{% extends 'web/partials/base.html' %}
+
+
+{% load static %}
+
+{% block content %}
+
+		<!-- Start Page Title Area -->
+		<div class="page-title-area">
+			<div class="container">
+				<div class="page-title-content">
+					<h2>Services details</h2>
+
+					<ul>
+						<li>
+							<a href="/">
+								Home 
+							</a>
+						</li>
+
+						<li class="active">Services details</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="shape shape-1">
+				<img src="{% static 'web/images/banner/toppage.png' %}" alt="Image">
+			</div>
+		
+		</div>
+		<!-- End Page Title Area -->
+		
+		<!-- Start Services Details Area -->
+		<section class="services-details-area ptb-100">
+			<div class="container">
+				<div class="row">
+					<!-- <div class="col-lg-4">
+						<div class="widget-sidebar">
+							<div class="sidebar-widget search">
+								<form class="search-form">
+									<input class="form-control" name="search" placeholder="Search..." type="text">
+									<button class="search-button" type="submit">
+										<i class="ri-search-line"></i>
+									</button>
+								</form>	
+							</div>
+
+							<div class="sidebar-widget categories">
+								<h3>Categories</h3>
+	
+								<ul>
+									<li>
+										<a href="#">
+											Road freight
+											<i class="ri-arrow-right-line"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Rail freight
+											<i class="ri-arrow-right-line"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Ocean freight
+											<i class="ri-arrow-right-line"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Child nutrition
+											<i class="ri-arrow-right-line"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Air freight
+											<i class="ri-arrow-right-line"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Shipping survival
+											<i class="ri-arrow-right-line"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Logistics solutions	
+											<i class="ri-arrow-right-line"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Industry solutions
+											<i class="ri-arrow-right-line"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="sidebar-widget quat-from">
+								<h3>Request a quatre</h3>
+	
+								<form class="request-quote-from">
+									<div class="row">
+										<div class="col-12">
+											<div class="form-group">
+												<label class="form-label">Name</label>
+												<input type="text" class="form-control">
+											</div>
+										</div>
+
+										<div class="col-12">
+											<div class="form-group">
+												<label class="form-label">Phone</label>
+												<input type="text" class="form-control">
+											</div>
+										</div>
+
+										<div class="col-12">
+											<div class="form-group">
+												<label class="form-label">Email address</label>
+												<input type="email" class="form-control">
+											</div>
+										</div>
+
+										<div class="col-12">
+											<button type="submit" class="default-btn">
+												Submit
+											</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div> -->
+
+					<div class="col-lg-12">
+						<div class="services-details-top-content">
+							<div class="services-details-content content-1">
+								<h3>{{service.heading}}</h3>
+								<div class="services-details-img">
+									<img src="{{service.image.crop.1080x680}}" alt="Image">
+								</div>
+							</div>
+							<h3>{{service.contenttitle}}</h3>
+							<div class="services-details-content content-2">
+								<p>{{service.content}}</p>
+							</div>
+
+						
+							
+
+								
+							
+
+							<!-- <div class="services-details-content content-4">
+								<h3>All products include</h3>
+
+								<p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Cras ultricies ligula sed magna dictum porta. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia.</p>
+
+								<ul>
+									<li>Donec rutrum congue leo eget malesuada.</li>
+									<li>Donec sollicitudin molestie malesuada.</li>
+									<li>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</li>
+									<li>Sed porttitor lectus nibh.</li>
+								</ul>
+							</div> -->
+
+							<!-- <div class="services-details-content content-5">
+								<h3>Our road freight solutions</h3>
+
+								<p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Cras ultricies ligula sed magna dictum porta. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula ante ipsum primis in faucibus orci luctu.</p>
+							</div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Services Details Area -->
+
+{% endblock %}
